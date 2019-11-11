@@ -14,7 +14,6 @@ function validate(req,res,next){
     if(users.indexOf(req.body.username) == -1) req.validate = true;
     next();
 }
-
 module.exports = {
     index,
     validate,
