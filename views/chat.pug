@@ -4,23 +4,32 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title MyChat App
+        title Juego Quiz
         link(rel="stylesheet", href="/css/main.css")
         link(rel="stylesheet", href="/css/chat.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
         script(src="/socket.io/socket.io.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
         script(src="/scripts/chat.js")
+        script(src="/script/index2.js")
     body
         #container.full-height.full-width
             #chat-area.full-width
                 #messages.full-height
                     #msg-list.full-width
+                       h1(class="center") Bienvenido!
+                        p
+                        P
+                            a(href="http://localhost:3001/", class=["btn","btn-info","btn-lg"]) JUGAR
+                            //aqui seria lo de la tabla mejor si elimina este comentario 
+
                 #users-list.full-height
                     .full-width.full-height
                         h2 Usuarios en línea
                         #users
+
+                #juego-list.full-heigth
+                
             form#send-msg-form.full-width
-                textarea#message.lighter(name="message",placeholder="Escribe aquí tu mensaje...")
-                button#send-msg-btn
-                    i.fa.fa-paper-plane
+                
+                    
